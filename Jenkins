@@ -6,6 +6,8 @@ pipeline {
             steps {
                 echo 'Hello World'
             }
+        }
+        stage('deploy') {
             steps {
                 git branch: 'main', url: 'https://github.com/prateek-gaur709/EmployeeLoginSignUp'
             }
